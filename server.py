@@ -2,7 +2,7 @@ from http.server import BaseHTTPRequestHandler, HTTPServer
 import json
 from ocr import NeuralNetwork
 
-model = NeuralNetwork(400, 15, 10)
+model = NeuralNetwork(400, 30, 10)
 model.load_weights()
 
 class Handler(BaseHTTPRequestHandler):
